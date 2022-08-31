@@ -26,9 +26,25 @@ public class Order {
                 cupcakeMenu.get(i).type();
                 System.out.println("Price: $" + cupcakeMenu.get(i).getPrice());
                 System.out.println();
-                System.out.println("DRINKS:");
 
             }
+            System.out.println("DRINKS:");
+
+            for (int i = 0; i < drinkMenu.size(); i++) {
+                itemNumber++;
+
+                System.out.print(itemNumber + ".");
+
+
+                drinkMenu.get(i).type();
+
+                System.out.println("Price: $" + drinkMenu.get(i).getPrice());
+
+
+                System.out.println();
+            }
+
+
             boolean ordering = true;
             while (ordering) {
 
